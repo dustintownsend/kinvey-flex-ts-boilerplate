@@ -1,14 +1,14 @@
 {
   "name": "kinvey-flex-ts-boilerplate",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Typescript boilerplate for Kinvey Flex Services.",
-  "main": "kinvey.js",
+  "main": "kinvey.ts",
   "scripts": {
-    "kinvey": "cross-env-shell node ./kinvey.js",
+    "kinvey": "cross-env-shell ts-node ./kinvey.ts",
     "kinvey-profile-list": "npm run kinvey profile list",
     "kinvey-flex-status": "npm run kinvey flex status",
-    "kinvey-flex-deploy": "node ./build-dist-pkg.js && webpack && npm run kinvey flex deploy",
-    "dev": "webpack && node ./dist/bundle.js"
+    "kinvey-flex-deploy": "ts-node ./build-dist-pkg.ts && webpack && npm run kinvey flex deploy",
+    "dev": "webpack && ts-node flex-dev-server.ts"
   },
   "repository": {
     "type": "git",
@@ -34,8 +34,10 @@
     "@types/node": "^9.3.0",
     "cross-env": "^5.1.3",
     "dotenv": "^4.0.0",
+    "express": "^4.16.2",
     "kinvey-cli": "https://github.com/Kinvey/kinvey-cli#v3.0.0-beta.0",
     "ts-loader": "^3.2.0",
+    "ts-node": "^4.1.0",
     "typescript": "^2.6.2",
     "webpack": "^3.10.0",
     "webpack-node-externals": "^1.6.0"
