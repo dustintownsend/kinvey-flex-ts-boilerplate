@@ -22,6 +22,6 @@
     "outDir": "dist",
     "sourceMap": true,
     "allowJs": true,
-    "moduleResolution": "node",
+    "moduleResolution": "node"
   }
 }
