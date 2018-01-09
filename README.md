@@ -24,3 +24,6 @@ The current implementation is barebones, but may evolve overtime.
 
 ## License
 MIT
+
+## Support
+No support provided. Use at your own risk.
