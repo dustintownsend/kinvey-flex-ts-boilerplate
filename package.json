@@ -7,7 +7,8 @@
     "kinvey": "cross-env-shell node ./kinvey.js",
     "kinvey-profile-list": "npm run kinvey profile list",
     "kinvey-flex-status": "npm run kinvey flex status",
-    "kinvey-flex-deploy": "node ./build-dist-pkg.js && npm run kinvey flex deploy"
+    "kinvey-flex-deploy": "node ./build-dist-pkg.js && webpack && npm run kinvey flex deploy",
+    "dev": "webpack && node ./dist/bundle.js"
   },
   "repository": {
     "type": "git",
