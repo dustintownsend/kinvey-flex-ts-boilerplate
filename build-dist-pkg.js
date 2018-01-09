@@ -10,6 +10,8 @@ const pkg = require('./package.json');
 delete pkg.scripts;
 delete pkg.devDependencies;
 
+pkg.main = "bundle.js";
+
 var json = JSON.stringify(pkg, null, 2);
 try {
     fs.writeFileSync('./dist/package.json', json);

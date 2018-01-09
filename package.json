@@ -2,7 +2,7 @@
   "name": "kinvey-flex-ts-boilerplate",
   "version": "0.1.0",
   "description": "Typescript boilerplate for Kinvey Flex Services.",
-  "main": "kinvey-cli.js",
+  "main": "kinvey.js",
   "scripts": {
     "kinvey": "cross-env-shell node ./kinvey.js",
     "kinvey-profile-list": "npm run kinvey profile list",
