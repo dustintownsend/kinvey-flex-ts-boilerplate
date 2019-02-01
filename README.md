@@ -1,3 +1,7 @@
+[![No Maintenance Intended](http://unmaintained.tech/badge.svg)](http://unmaintained.tech/)
+# DEPRECATED
+This boilerplate has been replaced with [Create Kinvey Flex Service](https://github.com/dustintownsend/create-kinvey-flex-service).
+
 ## Overview
 The purpose of this project is to provide a boilerplate for Kinvey Flex Services (https://devcenter.kinvey.com/nodejs/guides/flex-services) using TypeScript and Webpack.
 The current implementation is barebones, but may evolve overtime.
